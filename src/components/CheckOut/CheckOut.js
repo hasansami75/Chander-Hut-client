@@ -20,7 +20,7 @@ const CheckOut = () => {
     console.log(products);
     console.log(details)
     useEffect(() => {
-        fetch('http://localhost:5000/products')
+        fetch('https://glacial-peak-87735.herokuapp.com/products')
             .then(res => res.json())
             .then(data => setProducts(data))
     }, [])

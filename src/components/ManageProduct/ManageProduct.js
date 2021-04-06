@@ -4,7 +4,7 @@ import DeleteIcon from '@material-ui/icons/Delete';
 const ManageProduct = ({ product, setProducts, products }) => {
     console.log(product._id)
     const deleteEvent = (id) => {
-        fetch(`http://localhost:5000/deleteEvent/${id}`, {
+        fetch(`https://glacial-peak-87735.herokuapp.com/deleteEvent/${id}`, {
             method: 'DELETE',
         })
             .then(res => res.json())

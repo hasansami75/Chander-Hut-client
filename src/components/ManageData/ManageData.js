@@ -106,7 +106,7 @@ const ManageData = ({ product }) => {
     const classes = useStyles();
     const [open, setOpen] = React.useState(true);
     useEffect(() => {
-        fetch('http://localhost:5000/products')
+        fetch('https://glacial-peak-87735.herokuapp.com/products')
             .then(res => res.json())
             .then(data => setProducts(data))
     }, [])

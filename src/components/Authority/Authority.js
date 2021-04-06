@@ -112,7 +112,7 @@ const Authority = () => {
             price: data.price
         };
         console.log(eventData);
-        const url = `http://localhost:5000/addProduct`;
+        const url = `https://glacial-peak-87735.herokuapp.com/addProduct`;
         fetch(url,{
             method: 'POST',
             headers:{

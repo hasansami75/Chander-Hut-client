@@ -14,7 +14,7 @@ const Order = () => {
     const [orders, setOrders] = useState([]);
     const [orderDetails, setOrderDetails] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/orders?email=' + loggedInUser.email)
+        fetch('https://glacial-peak-87735.herokuapp.com/orders?email=' + loggedInUser.email)
             .then(res => res.json())
             .then(data => setOrders(data))
     }, [])
