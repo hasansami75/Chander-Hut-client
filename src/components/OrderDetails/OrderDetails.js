@@ -8,7 +8,7 @@ const OrderDetails = ({order}) => {
                 <tr>
                     <th scope="row">{order.productName}</th>
                     <td>{order.price}</td>
-                    <td>{order.ProductWeight}</td>
+                    <td>{order.productWeight}</td>
                     <td>{new Date(order.time).toDateString('dd/MM/yyyy')}</td>
                     <td>{new Date(order.time).toTimeString()}</td>
                 </tr>

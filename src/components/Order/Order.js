@@ -24,7 +24,7 @@ const Order = () => {
         <>
             <Header />
             <div className="container mt-5">
-                <h3>Hi, {loggedInUser.name}.</h3>
+                <h3>Hi, <span style={{color:"red"}}>{loggedInUser.name}</span>.</h3>
                 <h5>You have total {orders.length} orders.</h5>
                 <h6>See your order dashboard:</h6> <br />
                 <div className="row">

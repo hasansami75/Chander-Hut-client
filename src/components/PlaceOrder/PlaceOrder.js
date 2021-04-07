@@ -74,10 +74,12 @@ const PlaceOrder = () => {
     return (
         <div>
             <Header />
-            <div className="mt-5 container w-25 bg-warning">
-                <form  onSubmit={handleSubmit(onSubmit)} className={classes.container} noValidate>
+            <div className=" container bg-warning w-75">
+                <div className="row mt-5">
+                    <div className="col-md-12">
+                    <form  onSubmit={handleSubmit(onSubmit)} className={classes.container} noValidate>
                     <div>
-                        <label class="form-label">User Name:</label><br />
+                        <label class="form-label mt-4">User Name:</label><br />
                         <input class="form-control" name="name" defaultValue={loggedInUser.name} ref={register({ required: true })} /> <br />
                     </div>
                     <div>
@@ -135,6 +137,8 @@ const PlaceOrder = () => {
                     {errors.exampleRequired && <span>This field is required</span>}
                     <p className="text-center mt-4"><input className="btn btn-success mb-3" type="submit" /></p>
                 </form>
+                    </div>
+                </div>
             </div>
         </div>
     );
